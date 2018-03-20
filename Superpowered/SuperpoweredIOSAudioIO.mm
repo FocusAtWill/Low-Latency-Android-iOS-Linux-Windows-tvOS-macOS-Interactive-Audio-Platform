@@ -13,7 +13,8 @@ code;                                                               \
 _Pragma("clang diagnostic pop")                                     \
 }
 
-#define USES_AUDIO_INPUT 1
+// Disable audio input, we don't need the microphone privilege
+#define USES_AUDIO_INPUT 0
 
 typedef enum audioDeviceType {
     audioDeviceType_USB = 1, audioDeviceType_headphone = 2, audioDeviceType_HDMI = 3, audioDeviceType_other = 4
